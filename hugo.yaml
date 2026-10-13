@@ -1,0 +1,38 @@
+baseURL: ''
+locale: en-us
+title: emmaliaocode
+theme: PaperMod
+
+menus:
+  main:
+  - name: About
+    pageRef: /
+    weight: 10
+  - name: Posts
+    pageRef: /posts
+    weight: 20
+  - name: Projects
+    pageRef: /projects
+    weight: 30
+  - name: Tags
+    pageRef: /tags
+    weight: 40
+  - name: Archives
+    pageRef: /archives
+    weight: 50
+
+params:
+  profileMode:
+    enabled: true
+    title: 'Emma Liao'
+    subtitle: "This is subtitle"
+
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    buttons:
+      - name: Resume
+        url: "https://github.com/"
+
+  socialIcons:
+    - name: "GitHub"
+      url: "<link>"

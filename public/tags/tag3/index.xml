@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tag3 on emmaliaocode</title>
+    <link>http://localhost:1313/tags/tag3/</link>
+    <description>Recent content in Tag3 on emmaliaocode</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Oct 2026 21:36:47 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tag3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Second</title>
+      <link>http://localhost:1313/posts/second/</link>
+      <pubDate>Mon, 12 Oct 2026 21:36:47 +0800</pubDate>
+      <guid>http://localhost:1313/posts/second/</guid>
+      <description>&lt;h2 id=&#34;this-is-header-2&#34;&gt;This is header 2&lt;/h2&gt;
+&lt;p&gt;This is body.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
