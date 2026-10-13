@@ -5,34 +5,37 @@ theme: PaperMod
 
 menus:
   main:
-  - name: About
-    pageRef: /
-    weight: 10
   - name: Posts
     pageRef: /posts
-    weight: 20
+    weight: 10
   - name: Projects
     pageRef: /projects
-    weight: 30
-  - name: Tags
-    pageRef: /tags
-    weight: 40
-  - name: Archives
-    pageRef: /archives
+    weight: 20
+  # - name: Tags
+  #   pageRef: /tags
+  #   weight: 30
+  # - name: Archives
+  #   pageRef: /archives
+  #   weight: 40
+  - name: About
+    pageRef: /
     weight: 50
 
 params:
   profileMode:
     enabled: true
     title: 'Emma Liao'
-    subtitle: "This is subtitle"
-
+    subtitle: "DevOps Engineer"
     imageWidth: 120 # custom size
     imageHeight: 120 # custom size
     buttons:
       - name: Resume
-        url: "https://github.com/"
+        url: ""
 
   socialIcons:
-    - name: "GitHub"
-      url: "<link>"
+    - name: email
+      url: "mailto:wanyuliao4@gmail.com"
+    - name: linkedin
+      url: ""
+    - name: github
+      url: "https://github.com/"

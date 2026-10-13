@@ -1,0 +1,13 @@
+{{- define "main" }}
+
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Content }}
+  <div class="post-description">{{ .Content }}</div>
+  {{- end }}
+</header>
+
+{{- partial "projects/grid.html" (dict "pages" .RegularPages.ByWeight) }}
+
+{{- end }}{{- /* end main */ -}}

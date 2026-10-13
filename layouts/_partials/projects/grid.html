@@ -1,0 +1,32 @@
+{{- $pages := .pages }}
+{{- partial "projects/style.html" . }}
+
+<div class="projects projects--grid">
+  {{- range $pages }}
+  {{- $accent := .Param "accent" | default "#6c7a89" }}
+  <article class="pcard">
+    <a class="pcard__link" href="{{ .Permalink }}" aria-label="{{ .Title | plainify }}"></a>
+    <div class="pcard__cover" style="--accent: {{ $accent }}">
+      {{- with .Params.cover.image }}
+      <img src="{{ . }}" alt="{{ $.Title | plainify }}" loading="lazy">
+      {{- else }}
+      <span class="pcard__initial">{{ substr .Title 0 1 }}</span>
+      {{- end }}
+    </div>
+    <div class="pcard__body">
+      <h2 class="pcard__title">{{ .Title }}</h2>
+      <p class="pcard__summary">{{ .Summary | plainify | htmlUnescape }}</p>
+      {{- with .Params.tags }}
+      <div class="pcard__tags">
+        {{- range . }}<span class="ptag">{{ . }}</span>{{ end }}
+      </div>
+      {{- end }}
+      {{- with .Params.links }}
+      <div class="pcard__links">
+        {{- range . }}<a href="{{ .url }}" rel="noopener" target="_blank">{{ .name }}</a>{{ end }}
+      </div>
+      {{- end }}
+    </div>
+  </article>
+  {{- end }}
+</div>
